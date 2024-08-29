@@ -33,7 +33,7 @@ def can_reach_pandavas(enemy_powers, enemy, cur_power, behind, skips, recharge, 
 
 # Total number of circles in the Chakravyuha to cross
 last_circle = 11  
-'''
+
 #Parameters taken from user
 enemy_powers = list(map(int, input().split()))
 power = int(input())
@@ -43,17 +43,8 @@ a = min(a,last_circle)  # Restrict the maximum skips to the total number of enem
 b = min(b,last_circle)  # Restrict the maximum recharges to the total number of enemies (11)
 
 behind = 0  # Power of regenerated enemy to attack from behind.
-'''
 
 
-enemy_powers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110]
-power = 300
-a = 2 
-b = 1
-a = min(a,last_circle)  # Restrict the maximum skips to the total number of enemies (11)
-b = min(b,last_circle)  # Restrict the maximum recharges to the total number of enemies (11)
-
-behind = 0
 
 # Result Generation
 if can_reach_pandavas(enemy_powers, 0, power, behind, a, b, power):
